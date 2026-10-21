@@ -1,0 +1,17 @@
+{
+  "name": "ratnakar-meta-ads",
+  "version": "1.0.0",
+  "description": "Meta Ads Autopilot by Ratnakar Content: Claude skill for Shopify + Meta Ads + Shiprocket (COD / RTO aware)",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "check": "node scripts/check_setup.mjs",
+    "report": "node scripts/report_daily.mjs",
+    "profit": "node scripts/profit_real.mjs",
+    "products": "node scripts/profit_by_product.mjs",
+    "orders": "node scripts/orders_rto.mjs",
+    "autopilot": "node scripts/autopilot.mjs",
+    "comments": "node scripts/comment_guard.mjs"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "_example": true,
+  "_readme": "EXAMPLE NUMBERS ONLY. Copy this file to config.json, replace every number with YOUR real costs, then delete the _example line. Every key is explained in references/config.md. Money is in INR, dates in IST.",
+
+  "currency": "INR",
+  "timezone": "Asia/Kolkata",
+
+  "products": [
+    { "name": "Example Face Serum 30ml", "cost": 140, "handles": ["example-face-serum"], "skus": ["EX-SERUM-30"], "title_contains": ["Face Serum"] },
+    { "name": "Example Combo Pack of 3", "cost": 380, "handles": ["example-combo-pack"], "skus": [], "title_contains": ["Combo Pack"] }
+  ],
+  "default_product_cost": null,
+  "campaign_product_map": [
+    { "campaign_name_contains": "SERUM", "product": "Example Face Serum 30ml" }
+  ],
+
+  "shipping": {
+    "forward_per_order": 65,
+    "rto_return_per_order": 60,
+    "rto_packaging_loss": 15,
+    "use_shiprocket_actuals": true,
+    "shiprocket_add_gst_pct": 0
+  },
+  "cod_fee": { "flat": 35, "pct_of_order": 0, "charged_on_rto": false },
+  "payment_gateway_fee_pct": 2,
+
+  "rto": {
+    "source": "auto",
+    "cod_rate_pct": 22,
+    "prepaid_rate_pct": 5,
+    "shopify_rto_tags": ["RTO"],
+    "lookback_days": 30,
+    "min_closed_shipments": 20
+  },
+
+  "gst": {
+    "sales_gst_registered": false,
+    "sales_gst_pct": 18,
+    "prices_include_gst": true,
+    "meta_gst_pct": 18,
+    "claim_meta_gst_credit": false
+  },
+
+  "orders": {
+    "duplicate_window_hours": 24,
+    "exclude_tags": ["test", "fake"],
+    "cod_gateway_regex": "cod|cash on delivery|cash_on_delivery",
+    "prepaid_gateway_regex": "payu|razorpay|cashfree|phonepe|paytm|stripe|ccavenue|easebuzz|juspay|billdesk|snapmint|simpl|gokwik|shopify_payments|shopify payments|upi|card|netbanking|wallet"
+  },
+
+  "assumptions": { "aov": 850, "cod_share_pct": 75 },
+
+  "report": { "burning_cash_spend": null, "min_spend_to_judge": null },
+
+  "autopilot": {
+    "min_age_hours_ad": 24,
+    "min_age_hours_adset": 72,
+    "stop_loss_spend": null,
+    "pause_min_spend": null,
+    "pause_roas_below": null,
+    "scale_min_purchases": 3,
+    "scale_roas_at_least": null,
+    "scale_margin_over_break_even": 1.3,
+    "max_budget_increase_pct": 20,
+    "min_hours_between_budget_changes": 72,
+    "max_daily_budget_per_item": 2000,
+    "max_total_daily_budget": 5000,
+    "skip_if_learning": true,
+    "plan_valid_hours": 6
+  },
+
+  "campaign_defaults": {
+    "country": "IN",
+    "age_min": 18,
+    "age_max": 65,
+    "name_prefix": "CLAUDE",
+    "url_tags": "utm_source=facebook&utm_medium=paid&utm_campaign={{campaign.name}}&utm_content={{ad.name}}"
+  },
+
+  "comments": {
+    "own_domains": ["yourstore.in"],
+    "extra_spam_words": [],
+    "extra_abuse_words": [],
+    "extra_complaint_words": [],
+    "lookback_days": 14
+  }
+}
