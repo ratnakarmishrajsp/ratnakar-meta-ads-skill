@@ -1,11 +1,20 @@
 # Meta Ads Autopilot: a Claude skill by Ratnakar Content
 
+<a href="https://superprofile.bio/course/d28d58bb-0912-4937-a413-bfdadfadf02b"><img src="assets/course-banner.jpg" alt="Meta Ads Autopilot with AI: full video course" width="100%"></a>
+
+> [!TIP]
+> **🎓 Want to set this up step by step?** My video course **Meta Ads Autopilot with AI** shows every screen, in Hindi: Meta token, Shopify app, Shiprocket API, and Claude / Antigravity / ChatGPT. It comes with a 10-page setup guide PDF.
+>
+> **[👉 Watch the full course](https://superprofile.bio/course/d28d58bb-0912-4937-a413-bfdadfadf02b)**
+
 Let Claude run your Meta (Facebook + Instagram) ads for your Shopify store in India: COD, RTO and GST aware.
 You talk to Claude in plain words; it runs scripts against the Meta, Shopify and (optional) Shiprocket APIs and brings back real numbers.
 
 ## ⬇️ Download
 
 **[Download ratnakar-meta-ads-skill.zip](https://github.com/ratnakarmishrajsp/ratnakar-meta-ads-skill/releases/latest/download/ratnakar-meta-ads-skill.zip)**, then follow [SETUP.md](ratnakar-meta-ads/SETUP.md) (about 30–45 minutes, first time only).
+
+Stuck on a step? The [video course](https://superprofile.bio/course/d28d58bb-0912-4937-a413-bfdadfadf02b) shows every setup screen.
 
 ## The 7 jobs
 
